@@ -1,2 +1,28 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/le3-5Dzg)
-# proiect-poo-template
+# Streaming App System in Java
+
+Data Input
+==
+- the main method of the project is in the ProiectPoo class
+- the main method gets as parameters 3 csv files with the information about the
+users, streamers and streams and a txt file with the commands that need to be implemented using that info for the app
+
+Classes Structure
+==
+- **ProiectPoo** class: the main method
+- **StreamingApp** class:
+  - **manages** the streams, users, streamers
+  - implements the **Singleton Design Pattern**
+- **ReadFromFiles** class: reads from files the info about the streams, users, streamers and commands
+- **Commands** class: implements the **Command Design Pattern** in order to incapsulate the commands read from files into objects:
+  - **AddCommand** subclass
+  - **DeleteCommand** subclass
+  - **ListenCommand** subclass
+  - **RecommendCommand** subclass
+  - **SurpriseCommand** subclass
+- **StreamersFactory** class: implements **Singleton** and **Factory** Design Patterns so that it creates streamer objects based ono their type
+- **Streamer** class:
+  - **AuthorAudioBook** subclass
+  - **Musician** subclass
+  - **Podcaster** subclass
+- **User** class: creates user objects
+- **Stream** class: creates stream objects
