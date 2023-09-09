@@ -1,18 +1,18 @@
 # Streaming App System in Java
 Overview
-==
+--
 The purpose of this project is to create a recommendation system for streams (music, podcasts or audiobooks)
 based on existing data about the application's users (listeners) and the creators of streams (musicians, podcast moderators, authors) or 
 those accumulated during the running of the application.
 
 Data Input
-==
+--
 - the main method of the project is in the ProiectPoo class
 - the main method gets as parameters 3 csv files with the information about the
 users, streamers and streams and a txt file with the commands that need to be implemented using that info for the app
 
 Classes Structure
-==
+--
 - **ProiectPoo** class: the main method
 - **StreamingApp** class:
   - **manages** the streams, users, streamers
@@ -38,14 +38,14 @@ Classes Structure
 - **ListRequest** class: implements the **Chain of Responsibility** Design Pattern, _each handler in the chain will try to solve or pass the request_
 
 OOP Concepts used
-==
+--
 - **Abstraction**: the Command class is abstract to avoid creating pure Command objects, since the objects from the subclasses were needed
 - **Encapsulation**: the instance fields in the classes are declared private, can only be accessed through the public getters and setters
 - **Inheritance**: by creating subclasses
 - **Polymorphism**: each subclass of the Command class overrides the executeCommand method
 
 Design Patterns used
-==
+--
 - **Creational Design Patterns**: Singleton, Factory
 - **Behavioral Design Patterns**: Command, Chain of Responsibility
 
